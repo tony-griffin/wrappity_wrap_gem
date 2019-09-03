@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tony Griffin"]
   spec.email         = ["tony@madetech.com"]
 
-  spec.summary       = %q{A single function that takes two arguments, a string, and a column number. The function returns the string, but with line breaks inserted at the right places to make sure that no line is longer than the column number. You try to break lines at word boundaries.}
-  spec.description   = %q{}
-  spec.homepage      = 'https://rubygems.org/gems/example'
+  spec.summary       = %q{Word wrapper gem that takes a word and wraps into lines at given column boundaries}
+  spec.homepage      = 'https://github.com/tonymadetech/wrappity_wrap_gem.git'
   spec.license       = "MIT"
 
   spec.metadata["homepage_uri"] = spec.homepage
