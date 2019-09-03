@@ -4,7 +4,7 @@ require "wrappity_wrap/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "wrappity_wrap"
-  spec.version       = Wrappity_Wrap::VERSION
+  spec.version       = WrappityWrap::VERSION
   spec.authors       = ["Tony Griffin"]
   spec.email         = ["tony@madetech.com"]
 
