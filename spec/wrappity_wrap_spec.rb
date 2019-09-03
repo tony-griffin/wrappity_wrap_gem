@@ -14,12 +14,20 @@ RSpec.describe WrappityWrap do
     expect(WrappityWrap.wrap("", 4)).to eq("")
   end
 
-  it "returns string when string is shorter than column" do
+  it "returns wrapped string when string is shorter than column" do
     expect(WrappityWrap.wrap("word", 6)).to eq("word")
   end
 
-  it "returns string when string has a space before the column" do
+  it "returns wrapped string when string has a space before the column" do
+    expect(WrappityWrap.wrap("long word", 6)).to eq("long/nword")
+  end
+
+  it "returns wrapped string when space occurs at column" do
     expect(WrappityWrap.wrap("long word", 5)).to eq("long/nword")
+  end
+
+  xit "returns wrapped string when space after the column" do
+    expect(WrappityWrap.wrap("verylong word", 5)).to eq("very/nlong/nword")
   end
 
 end
